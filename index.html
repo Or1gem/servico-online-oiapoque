@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WTN - Serviços Online</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    .topo {
+      background: linear-gradient(135deg, #00c689, #003c64);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 5px solid #00c689;
+    }
+
+    .topo .logo {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .topo .logo span {
+      display: block;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #ddd;
+    }
+
+    .titulo {
+      margin-top: 0.5rem;
+      font-size: 1.8rem;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .servicos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .servicos ul {
+      list-style: none;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      min-width: 250px;
+    }
+
+    .servicos li {
+      margin: 0.6rem 0;
+      font-size: 1.1rem;
+    }
+
+    .servicos i {
+      color: #00c689;
+      margin-right: 0.5rem;
+    }
+
+    .chamada {
+      background: #00c689;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
+
+    .contato {
+      background: #003c64;
+      padding: 1rem;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .whatsapp {
+      color: #00ff99;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .whatsapp i {
+      margin-right: 0.5rem;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #eee;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .explicacoes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+      max-width: 1000px;
+    }
+
+    .explicacao {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .explicacao h3 {
+      margin-top: 0;
+      color: #00c689;
+    }
+
+    .explicacao p {
+      font-size: 0.95rem;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="topo">
+    <div class="logo">WTN <span>Serviços-Informatica</span></div>
+    <h1 class="titulo">Serviços On-line</h1>
+  </header>
+
+  <main>
+    <section class="servicos">
+      <ul>
+        <li><i class="fas fa-check"></i> Curriculum</li>
+        <li><i class="fas fa-check"></i> Quitação Eleitoral</li>
+        <li><i class="fas fa-check"></i> Declaração</li>
+        <li><i class="fas fa-check"></i> Requerimento</li>
+        <li><i class="fas fa-check"></i> Certidão Negativada</li>
+        <li><i class="fas fa-check"></i> Termo de Doação</li>
+        <li><i class="fas fa-check"></i> Criação de E-mail</li>
+        <li><i class="fas fa-check"></i> Recibo de Compra e Venda</li>
+      </ul>
+
+      <ul>
+        <li><i class="fas fa-check"></i> Ofício</li>
+        <li><i class="fas fa-check"></i> Inscrições</li>
+        <li><i class="fas fa-check"></i> Digitação</li>
+        <li><i class="fas fa-check"></i> Procuração</li>
+        <li><i class="fas fa-check"></i> Recibo Simples</li>
+        <li><i class="fas fa-check"></i> Pesquisas</li>
+        <li><i class="fas fa-check"></i> Emissão de Boletos</li>
+        <li><i class="fas fa-check"></i> Criação de sites e lojas online</li>
+        <li><i class="fas fa-check"></i> Outros</li>
+      </ul>
+    </section>
+
+    <section class="chamada">
+      <p>Esqueça as filas que consomem horas do seu dia. Aqui, tudo é resolvido em minutos, sem que você precise sair de casa!</p>
+    </section>
+
+    <section class="explicacoes">
+      <div class="explicacao">
+        <h3>Curriculum</h3>
+        <p>Documento essencial para apresentar sua experiência profissional e acadêmica a empresas na hora de buscar emprego.</p>
+      </div>
+      <div class="explicacao">
+        <h3>Quitação Eleitoral</h3>
+        <p>Comprova que você está em dia com suas obrigações eleitorais, necessário para concursos e matrículas.</p>
+      </div>
+      <div class="explicacao">
+        <h3>Declaração</h3>
+        <p>Usada para atestar situações diversas como residência, renda, união estável, entre outras finalidades.</p>
+      </div>
+      <div class="explicacao">
+        <h3>Requerimento</h3>
+        <p>Solicitação formal para órgãos e instituições públicas ou privadas. Pode ser personalizado conforme a necessidade.</p>
+      </div>
+      <div class="explicacao">
+        <h3>Certidão Negativada</h3>
+        <p>Documento que comprova a inexistência de dívidas ou pendências judiciais ou fiscais em nome do requerente.</p>
+      </div>
+      <div class="explicacao">
+        <h3>Termo de Doação</h3>
+        <p>Formaliza a doação de bens ou valores entre pessoas, exigido em diversas transações e para efeitos legais.</p>
+      </div>
+      <div class="explicacao">
+        <h3>Criação de E-mail</h3>
+        <p>Ajuda na criação e configuração de e-mails pessoais ou profissionais, com segurança e praticidade.</p>
+      </div>
+      <div class="explicacao">
+        <h3>Recibo de Compra e Venda</h3>
+        <p>Documento essencial que comprova a transferência de bens entre pessoas físicas ou jurídicas.</p>
+      </div>
+
+      <div class="explicacao">
+        <h3>criação de sites staticos e dinamicos.</h3>
+        <p>sites para comercio lojas entre outros.</p>
+      </div>
+      <br>
+    </section>
+
+    <section class="contato">
+      <a href="https://wa.me/5596981266281" class="whatsapp">
+        <i class="fab fa-whatsapp"></i> (96) 98126-6281 - Oiapoque-AP
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WTN Serviços. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
