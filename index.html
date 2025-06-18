@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WTN - Serviços Online</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
@@ -48,7 +51,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 3rem;
+      gap: 2rem;
       margin-bottom: 2rem;
     }
 
@@ -58,7 +61,8 @@
       background: #fff;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      min-width: 250px;
+      width: 100%;
+      max-width: 300px;
     }
 
     .servicos li {
@@ -82,11 +86,37 @@
       max-width: 600px;
     }
 
+    .explicacoes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .explicacao {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .explicacao h3 {
+      margin-top: 0;
+      color: #00c689;
+    }
+
+    .explicacao p {
+      font-size: 0.95rem;
+    }
+
     .contato {
       background: #003c64;
       padding: 1rem;
       border-radius: 12px;
       text-align: center;
+      margin-top: 2rem;
     }
 
     .whatsapp {
@@ -108,28 +138,13 @@
       font-size: 0.9rem;
     }
 
-    .explicacoes {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-      max-width: 1000px;
-    }
-
-    .explicacao {
-      background: white;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .explicacao h3 {
-      margin-top: 0;
-      color: #00c689;
-    }
-
-    .explicacao p {
-      font-size: 0.95rem;
+    @media screen and (max-width: 600px) {
+      .topo .logo {
+        font-size: 1.5rem;
+      }
+      .titulo {
+        font-size: 1.4rem;
+      }
     }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -203,12 +218,10 @@
         <h3>Recibo de Compra e Venda</h3>
         <p>Documento essencial que comprova a transferência de bens entre pessoas físicas ou jurídicas.</p>
       </div>
-
       <div class="explicacao">
-        <h3>criação de sites staticos e dinamicos.</h3>
-        <p>sites para comercio lojas entre outros.</p>
+        <h3>Criação de sites</h3>
+        <p>Desenvolvimento de sites estáticos e dinâmicos para comércios, lojas online, portfólios e outros fins.</p>
       </div>
-      <br>
     </section>
 
     <section class="contato">
